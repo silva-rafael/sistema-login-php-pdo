@@ -5,6 +5,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
+
+
     // Hash da senha para comparação segura
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
@@ -23,4 +25,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo 'Email ou senha inválidos.';
     }
 }
-?>
