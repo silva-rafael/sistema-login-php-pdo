@@ -5,7 +5,7 @@ include_once('header.php');
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION['usuario_id'])) {
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit;
 }
 

@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Autenticação bem-sucedida
         session_start();
         $_SESSION['usuario_id'] = $usuario['id'];
-        header('Location: dashboard.php');
+        header('Location: app/dashboard.php');
         exit;
     } else {
         // Autenticação falhou
